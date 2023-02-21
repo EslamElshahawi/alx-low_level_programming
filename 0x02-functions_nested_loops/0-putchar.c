@@ -1,9 +1,8 @@
 #include "main.h"
 
 /**
- * main : Entry point
- *
- * Retrun : 0 Always
+ * main - Prints _putchar with a new line
+ * Retrun : Always 0
  */
 
 int main(void)
