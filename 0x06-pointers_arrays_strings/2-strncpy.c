@@ -1,7 +1,5 @@
 #include "main.h"
 
-#include "holberton.h"
-
 /**
  * _strncpy - Entry point
  * @dest: copy to
