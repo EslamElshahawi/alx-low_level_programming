@@ -12,16 +12,16 @@
 int atoi(char *s)
 {
 	int i = 0;
-        int f = 0;
+	int f = 0;
 	int n = 0;
-        int len = 0; 
+	int len = 0;
 	int d = 0;
 	int digit = 0;
 
-	while(s[len])
+	while (s[len])
 		len++;
 
-	while(i < len && f == 0)
+	while (i < len && f == 0)
 	{
 		if (s[i] == '-')
 			++d;
