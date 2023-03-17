@@ -9,7 +9,7 @@
  * Return: 0 if a non-digit is found, 1 otherwise
  */
 
-int isdigit(char *s)
+int is_digit(char *s)
 {
 	int i = 0;
 
@@ -17,7 +17,7 @@ int isdigit(char *s)
 	{
 		if (s[i] < '0' || s[i] > 9)
 			return (0);
-		i++
+		i++;
 	}
 	return (1);
 }
@@ -63,8 +63,8 @@ int main(int argc, char *argv[])
 
 	s1 = argv[1];
 	s2 = argv[2];
-	if (argc != 3 || !isdigit(s1) || !isdigit(argv[s2]))
-		error();
+	if (argc != 3 || !is_digit(s1) || !is_digit(s2))
+		errors();
 
 	len1 = _strlen(s1);
 	len2 = _strlen(s2);
@@ -72,7 +72,7 @@ int main(int argc, char *argv[])
 
 	result = malloc(sizeof(int) * len);
 	if (!result)
-		return (NULL);
+		return (1);
 
 	for (i = 0; i < len; i++)
 		result[i] = 0;
