@@ -1,7 +1,7 @@
 #include "function_pointers.h"
 
 /**
- * array_iterator - takes array and function and should use function on all elements
+ * array_iterator - runs a given function on each element in a given array
  *
  * @array: pointer to the first element of an array of int
  * @size: the size of the array
