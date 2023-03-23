@@ -24,10 +24,10 @@ void print_all(const char * const format, ...)
 	{
 		if (n == (i - 1))
 		{
-			sep == "";
+			sep = "";
 		}
 
-		switch(foramt[n])
+		switch(format[n])
 		{
 		case 'c':
 			printf("%c%s", va_arg(args, int), sep);
@@ -36,12 +36,12 @@ void print_all(const char * const format, ...)
 			printf("%d%s", va_arg(args, int), sep);
 			break;
 		case 'f':
-			pritf("%f%s", va_arg(args, double), sep);
+			printf("%f%s", va_arg(args, double), sep);
 			break;
 		case 's':
 			str = va_arg(args, char *);
 			if (str == NULL)
-				str == "(nil)";
+				str = "(nil)";
 			printf("%s%s", str, sep);
 			break;
 		}
